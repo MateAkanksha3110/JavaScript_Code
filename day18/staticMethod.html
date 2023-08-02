@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+
+            // non static method is called using object reference
+            displayStudentDetails() {
+                document.write("id :" + this.id + "name :" + this.name + "<br>");
+            }
+
+            //It is called using the class reference
+            static courseName() {
+                document.write("java full stack");
+            }
+
+            //if we use same static method, it will take the last method
+            static courseName() {
+                document.write("php full stack");
+            }
+        }
+
+
+        var stu1 = new Student(1, 'manish');
+        var stu2 = new Student(2, 'rohit');
+
+        stu1.displayStudentDetails();
+        stu2.displayStudentDetails();
+
+        Student.courseName();
+
+
+    </script>
+</body>
+
+</html>

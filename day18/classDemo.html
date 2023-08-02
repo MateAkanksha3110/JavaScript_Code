@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(name,dept,year){
+                this.name=name;
+                this.dept=dept;
+                this.year=year;
+            }
+
+            displayDetails(){
+                document.write("name is "+ this.name +"<br>");
+                document.write("dept is "+ this.dept +"<br>");
+                document.write("year is "+ this.year +"<br>");
+            }
+
+            add(a,b){
+                return a+b;
+            }
+
+        }
+
+        var stu1 = new Student("sachin", "it", 2);
+        var stu2 = new Student("join", "cse", 1);
+        var stu3 = new Student("aryan", "it", 2);
+        var stu4 = new Student("ashish", "it", 4);
+
+        stu1.displayDetails();
+        stu2.displayDetails();
+        stu3.displayDetails();
+        stu4.displayDetails();
+        document.write(stu1.add(5,6));
+    </script>
+</body>
+</html>

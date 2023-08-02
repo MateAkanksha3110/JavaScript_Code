@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function additems(){
+            var list=document.getElementById("list1");
+            var item=document.createElement("li");
+
+
+            var input=document.getElementById("input1").value;
+            item.innerHTML=input;
+            // item.innerHTML=document.getElementById("input1").value;;
+            list.appendChild(item);
+        }
+
+
+        function removeitems(){
+            var list=document.getElementById("list1");
+            list.removeChild(list.lastChild);
+        }
+    </script>
+    
+    <h1>fruit list</h1>
+    <ol id="list1">
+        <li>mango</li>
+        <li>banana</li>
+        <li>apple</li>
+    </ol>
+
+    <h1>Contry list</h1>
+    <ol id="list2">
+        <li>london</li>
+        <li>bangladesh</li>
+        <li>india</li>
+    </ol>
+
+    <form>
+        <input type="text" name="valueitem" id="input1" placeholder="enteritem">
+    </form>
+
+    <button onclick="additems()">Add items</button>
+    <button onclick="removeitems()">remove items</button>
+</body>
+</html>

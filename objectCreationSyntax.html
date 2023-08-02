@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //by litreal
+        var car1={modelno:2019,price:30000, colour:'black'};
+
+        //using new ckeyword
+        var car2=new Object();
+        car2.modelno=2019;
+        car2.price=30000;
+        car2.colour='black';
+
+        document.write(car1.modelno+" "+car1.price+" "+car1.colour+"<br>");
+        document.write(car2.modelno+" "+car2.price+" "+car2.colour+"<br>");
+        
+        // by constructor
+        function Car3(modelno,price,colour){
+            this.modelno=modelno;
+            this.price=price;
+            this.colour=colour;
+        }
+
+        var car3=new Car3(2019,30000,'yellow');
+        document.write(car3.modelno+" "+car3.price+" "+car3.colour+"<br>");
+    
+        var today= new Date();
+        document.write("date is " + today);
+    </script>
+</body>
+</html>

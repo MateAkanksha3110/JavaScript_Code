@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1() {
+            alert("this is a window");
+        }
+        function fun2() {
+            var result = confirm("do you want to close");
+            if (result == true) {
+                alert("you have click ok");
+            }
+            else {
+                alert("you have click cancel");
+            }
+        }
+        function fun3() {
+            var name=prompt("please enter your name");
+            alert("your name is " + name);  
+        }
+        function fun4() {
+            open("https://www.flipkart.com/")
+        }
+    </script>
+    <button onclick="fun1()">window window</button>
+    <button onclick="fun2()">conform window</button>
+    <button onclick="fun3()">prompt window</button>
+    <button onclick="fun4()">open window</button>
+</body>
+</html>

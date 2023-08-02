@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <script>
+
+        function createpara(){
+           var element1= document.createElement("p");
+           element1.innerHTML="this is p";
+
+           var element2= document.createElement("h1");
+           element2.innerHTML="this is h1";
+
+
+           //var parent=document.getElementById("body");
+           //parent.appendChild(element);
+
+
+           var parent=document.getElementById("div1");
+           parent.appendChild(element1);
+           parent.appendChild(element2);
+
+        }
+    </script>
+    
+
+    <button onclick="createpara()">create paragraph</button>
+   
+
+    <h1>this is heading</h1>
+
+    <div id="div1" style="border: black solid 5px;  ">
+
+        <h2>this is div</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis explicabo sequi pariatur veniam? Expedita aut aperiam id laboriosam eaque natus?</p>
+    </div>
+
+    <br>
+    <div id="div2" style="border: black solid 5px;  ">
+
+        <h2>this is div</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis explicabo sequi pariatur veniam? Expedita aut aperiam id laboriosam eaque natus?</p>
+    </div>
+
+</body>
+</html>

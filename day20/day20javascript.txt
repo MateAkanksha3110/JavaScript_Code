@@ -1,0 +1,149 @@
+Day20:-
+----------
+ecma --> javascript standard.
+
+
+code modularity:-
+   ecommerece project:-
+   --------------------
+   module:-
+   ---------
+       login module,
+	   customer module,
+	   product  module,
+	   etc...
+	   
+	   
+   1 project --> multiple developer are involved, every developer will work in module.
+   
+   adv:-
+   ------
+      in module, easy to main, 
+	  in module, code readiblity
+	  
+	  eg:-
+	  -----
+	      folder
+		  
+		  E:-
+		  
+		  movies
+		  hollywood  bollywood 
+		  
+		  Ecommerce
+		  Login  Customer  Product
+		  
+          
+=======================================================================================
+need to have some server,..tomcat, glassfish,  we can add live server in the vs code.
+
+eg:-
+------
+library.js:-
+---------------
+
+export const noOfMonth=12;
+export const noOfDayInWeek=7;
+
+
+export function addition(a,b)
+{
+    return a+b;
+}
+
+export function userAgeDescription(age)
+{ 
+    if(age<=17)
+       return "you are children";
+     else if(age>=18 && age <45)
+        return "you are adult";
+       return "you are senior citizen";    
+
+}
+------------------------------------------------
+file1.js:-
+---------------
+
+//import { noOfDayInWeek } from "./mylibrary.js";
+//import { userAgeDescription } from "./mylibrary.js";
+
+import { userAgeDescription as user } from "./mylibrary.js";
+import { addition as add } from "./mylibrary.js";
+
+//console.log(" day in a week ="+ noOfDayInWeek);
+//console.log(userAgeDescription(53));
+
+
+console.log(user(34));
+console.log(add(2,6));
+
+
+---------------------------------------------------------------
+html code:-
+---------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="file1.js"></script>
+</head>
+<body>
+    <h1>Module demo</h1>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------
+closure:-
+--------------
+
+  <script>
+          function displayFirstName()   // outer function
+          {
+              var firstName="sachin ";
+              
+              return function displayFullName()  // inner function
+              {
+                   var lastName="tendulkar";
+                  
+                   return firstName+lastName;
+              }
+          }
+
+          var outerResult = displayFirstName();
+             console.log(outerResult());
+
+
+        
+
+    </script>
+	
+
+ Note:-
+ -------
+     inner function can able to access outer function property.
+     
+==================================================================================	 
+use strict:-
+-----------------
+  "use strict" is string literal,
+   to avoid javascript silent errors.
+
+javsscript is liberal, even if do some mistake in the coading, it will ignore,  
+  eg:-
+ -----
+         console.log(a);
+          var a;		 
+		  
+ <script>
+        "use strict";  // It will avoid the silent error
+     
+      a="hello";
+      console.log(a);
+
+
+    </script>
+===============================================================================================    		  
+			  

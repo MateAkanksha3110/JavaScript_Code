@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            border-color: brown;
+        }
+    </style>
+</head>
+<body >
+ 
+
+    <div id="body">
+    <p  class="para">this is p1</p>
+    <p class="para">this is p2</p>
+    <p >this is p3</p>
+
+    <h1 class="para">this is h1</h1>
+
+    </div>
+
+    <script>
+        var parentId=document.getElementById("body");
+        var element=parentId.getElementsByClassName("para");
+        
+        console.log(element);
+
+
+        var first=parentId.getElementsByClassName("para")[0].style.color="red";
+        console.log(first);
+        //document.write(first);
+
+    </script>
+</body>
+</html>

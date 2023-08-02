@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class employee
+        {
+            constructor(id, name)
+            {
+                this.id=id;
+                this.name=name;
+            }
+
+            display()
+            {
+                document.write("id : "+ this.id +" name : "+ this.name+"<br>")
+            }
+        }
+        employee.prototype.companyName= "abe and xyz";
+
+        var emp1 = new employee(1,'akanksha');
+        var emp2 = new employee(2,'akanksha mate');
+
+        emp1.display();
+        document.write(emp1.companyName + "<br>")
+        
+
+        emp2.display();
+        document.write(emp2.companyName + "<br>")
+
+    </script>
+</body>
+</html>

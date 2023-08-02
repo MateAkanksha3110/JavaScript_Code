@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /* x = 5; // Assign 5 to x
+     elem = document.getElementById("demo"); // Find an element 
+     elem.innerHTML = x;           // Display x in the element
+     var x; // Declare x*/
+
+    // Using let
+    let x = 5;
+    if (true) {
+      let x = 10; // This creates a new block-scoped variable x
+      console.log(x); // Output: 10
+    }
+    console.log(x); // Output: 5 (the outer x is unaffected)
+
+    // Using var
+    var y = 5;
+    if (true) {
+      var y = 10; // This reassigns the outer variable y
+      console.log(y); // Output: 10
+    }
+    console.log(y); // Output: 10 (the outer y is also changed)
+
+    // Using const
+    const z = 5;
+    if (true) {
+      const z = 10; // This creates a new block-scoped constant z
+      console.log(z); // Output: 10
+    }
+    console.log(z); // Output: 5 (the outer z is unaffected)
+  </script>
+
+</body>
+
+</html>

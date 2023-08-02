@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>if .. else Demo</h2>
+    <p id="demo"></p>
+    <script>
+        const age = 52;
+        let eligibility;
+        if (age < 18) {
+            eligibility = "you are not eligible for vote";
+        } else if (age >= 18) {
+            eligibility = "you are eligible for vote";
+        } else {
+            eligibility = "NA";
+        }
+        document.getElementById("demo").innerHTML = eligibility;
+    </script>
+</body>
+</html>

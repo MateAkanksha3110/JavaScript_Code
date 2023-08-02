@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=1, b=2, c=3;
+
+        console.log("value of a : " +a);
+        // var x = 5;
+        try
+        {
+        console.log("value of a : " +x);    //once error comes the program get terminated
+        console.log("inside the try block")
+        }
+        catch(e)    //only execute when get an exeption
+        {
+            console.log("exception occured :"+ e.message);
+        }
+        finally //it well execute always
+        {
+            console.log("at any cost, the code will execute, closing stmt");
+        }
+        console.log("value of b : " +b);
+        console.log("value of c : " +c);
+    </script>
+</body>
+</html>

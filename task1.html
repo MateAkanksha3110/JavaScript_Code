@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var employees=[
+            {id:1, name:"sachin", salary:56000, dept:"hr", age:32},
+            {id:2, name:"ravi", salary:67000, dept:"dev", age:29},
+            {id:3, name:"manoj", salary:92000, dept:"dev", age:37},
+            {id:4, name:"sorab", salary:40000, dept:"hr", age:26},
+            {id:5, name:"manish", salary:50000, dept:"tester", age:38},
+            {id:6, name:"kumar", salary:68000, dept:"dev", age:34}
+        ];
+
+        document.write("<h2>all employees</h2>");
+
+
+        for(var i=0; i<employees.length; i++){
+            document.write(employees[i].name+" "+employees[i].name+" "+employees[i].salary+" "+employees[i].dept+" "+employees[i].age+"<br>");
+        }
+
+        document.write("<br>");
+        document.write("<h2>Employeesage is less than 35</h2>");
+
+        for(var i=0; i<employees.length; i++){
+            if(employees[i].age<35){
+                            document.write(employees[i].name+" "+employees[i].name+" "+employees[i].salary+" "+employees[i].dept+" "+employees[i].age+"<br>");
+                        }
+        }
+
+        document.write("<br>");
+        document.write("<h2>Employeesage is devloper</h2>");
+        for(var i=0; i<employees.length; i++){
+            if(employees[i].dept=="dev"){
+                            document.write(employees[i].name+" "+employees[i].name+" "+employees[i].salary+" "+employees[i].dept+" "+employees[i].age+"<br>");
+                        }
+        }
+
+        document.write("<br>");
+        document.write("<h2>Employeesage is less than 35 and hr</h2>");
+        for(var i=0; i<employees.length; i++){
+            if(employees[i].age<35 && employees[i].dept=="hr"){
+                            document.write(employees[i].name+" "+employees[i].name+" "+employees[i].salary+" "+employees[i].dept+" "+employees[i].age+"<br>");
+                        }
+        }
+
+        document.write("<br>");
+        document.write("<h2>Employees total salary</h2>");
+        for(var i=0; i<employees.length; i++){
+            document.write(employees[i].salary+"<br>");
+        }
+
+
+        document.write("<h2>count of hr and developers</h2>");
+        var hrCount=0;
+        var devCount=0;
+        for(var i=0; i<employees.length; i++){
+            if(employees[i].dept=="hr"){
+                hrCount++;
+            }
+            else if(employees[i].dept=="dev"){
+                devCount++;
+                totalDeveloperSalary += employee[i].dept;
+            }
+        }
+        document.write("Hr count: " +hrCount + " Devloper count: " +devCount+"<br>" );
+
+
+        document.write("total developer salary: " +totalDeveloperSalary+"<br>" );
+
+    </script>
+</body>
+</html>

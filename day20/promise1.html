@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <script>
+
+        let promise = new Promise(function (resolve, reject) 
+        {
+            const x = "ABC";
+            const y = "abc";
+
+            if (x === y) 
+            {
+                resolve("Success");
+            } 
+            else 
+            {
+                reject("error");
+            }
+        });
+
+        promise.then(function (SuccessMessage) {
+            document.write(SuccessMessage);
+        })
+            .catch(function (ErrorMessage) {
+                document.write(ErrorMessage);
+            });
+            
+    </script>
+
+</body>
+
+</html>

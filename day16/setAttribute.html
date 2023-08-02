@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            background-color: brown;
+        }
+        .x{
+            background-color: blueviolet;
+        }
+        #y{
+            background-color: aqua;
+            color: blueviolet;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function addAttribute(){
+            var element=document.getElementById("h2").setAttribute("class","x");
+            var element=document.getElementById("a").setAttribute("href","https://www.amazon.in/");
+            
+        }
+        function removeattribute(){
+            document.getElementById("h2").removeAttribute("class");
+            
+        }
+    </script>
+
+
+    <h1 class="heading">this is h1</h1>
+    <h1 id="h2">this is h2</h1>
+
+
+    <a href="https://www.flipkart.com/">flipkart</a> <br>
+    <a id="a">amazon</a>    <br>
+
+    <button onclick="addAttribute()">add atrribute</button> 
+    
+    <button onclick="removeattribute()">remove attribute</button>
+
+    
+</body>
+</html>

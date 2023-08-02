@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        function fun1(){
+            var v=document.getElementById("f").value;
+            alert("your name is: "+v);
+            alert("length of your name is: "+v.length);
+                }
+        
+    </script>
+
+    
+    <form>
+        <input type="text" name="f" id="f" placeholder="firstname"> <br>
+        <input type="text" name="l" id="l" placeholder="lastname"> <br>
+        <button onclick="fun1()">click me</button>
+    </form>
+
+</body>
+</html>

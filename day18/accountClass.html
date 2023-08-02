@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account{
+            constructor(accountNo,name,balance,branch){
+                this.accountNo=accountNo;
+                this.name=name;
+                this.balance=balance;
+                this.branch=branch;
+            }
+
+            displayDetails(){
+                document.write("accountNo is "+ this.accountNo +"<br>");
+                document.write("name is "+ this.name +"<br>");
+                document.write("balance is "+ this.balance +"<br>");
+                document.write("branch is "+ this.branch +"<br>");
+            }
+
+            getBalance (){
+                return this.balance;
+            }
+
+            deposite(amount){
+                this.balance=this.balance+amount;
+                return this.balance;
+            }
+
+            withdraw(amount){
+                this.balance=this.balance-amount;
+                return this.balance;
+            }
+        }
+
+        var john= new Account(11,'john',5000, 'BOI');
+        var john1= new Account(12,'john1',5000, 'cOI');
+        var john2= new Account(13,'john2',5000, 'OI');
+        var john3= new Account(14,'john4',5000, 'DOI');
+
+        john.displayDetails();
+
+        document.write(john.getBalance()+"<br>");
+        document.write(john.deposite(2000)+"<br>");
+        document.write(john.withdraw(2000)+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var product = [
+            { id: 1, name: "hp laptop1", catagery: "It", price: 40000 },
+            { id: 2, name: "hp laptop2", catagery: "cs", price: 30000 },
+            { id: 3, name: "hp laptop3", catagery: "entc", price: 70000 },
+            { id: 4, name: "hp laptop4", catagery: "mech", price: 80000 },
+            { id: 5, name: "hp laptop5", catagery: "ele", price: 90000 }
+        ];
+
+        document.write("length of documents: " + product.length + "<br><br>");
+
+        for (var i = 0; i < product.length; i++) {
+            document.write(product[i].id + " " + product[i].name + " " + product[i].catagery + " " + product[i].price + "<br> <br>");
+        }
+        document.write("<br>");
+
+
+
+        document.write("display only mechs: <br>");
+        for (var i = 0; i < product.length; i++) {
+
+            if (product[i].catagery == "mech") {
+
+                document.write(product[i].id + " " + product[i].name + " " + product[i].catagery + " " + product[i].price + "<br>");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function checkEligibility(){
+            
+                var a=document.getElementById("age").value;
+                if(a>18){
+                    alert("eligible");
+                }
+                else{
+                    alert("not eligible");
+                }
+            }
+    </script>
+
+    <form name="myform">
+        <input type="number" name="age" id="age"> <br>
+        <button onclick="checkEligibility()">check eligible</button>
+    </form>
+</body>
+</html>

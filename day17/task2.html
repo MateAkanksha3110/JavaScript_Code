@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function result() 
+        {
+            var s = Number(document.getElementById("string").length);
+
+            document.write("the length of the string: "+ s +"<br>");
+
+            var p=document.getElementById("p");
+            p.innerHTML(s);
+        }
+
+       /* var words = "chetan is good boy";
+            document.write( words.length)+"<br>";
+
+               var count = 0;
+            for(var i = 0; i < words.length; i++) {
+                if(words[i] == " "){
+                    count++;
+                }
+            }
+            document.write( count+1+"<br>");
+               var count1 = 0;
+            for(var i = 0; i < words.length; i++) {
+                if(words[i] == ""){
+                    count1++;
+                }
+            }
+            document.write( count1+1); */
+
+    </script>
+
+ <input type="text" name="string" id="string" placeholder="enter">
+<button onclick="result()">length</button>
+<p id="p"></p>
+</body>
+</html>

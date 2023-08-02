@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkEligibility(age){
+            if(age>=18){
+                return "you are eligible <br>";
+            }
+            else{
+                return "you r not eligible <br>";
+            }
+        }
+
+
+
+        var message=checkEligibility(23);
+        document.write(message);
+
+
+        function getData() {
+            var userAge= Number(document.getElementById("age").value);
+            var result = checkEligibility(userAge);
+
+            var p=document.getElementById("p");
+            p.innerHTML=result;
+
+            p.style.backgroundColor='yellow';
+            p.style.fontSize='40px';
+
+        }
+
+        function capital(name,sirname) {
+            
+            
+        }
+    </script>
+
+    <input type="text" name="age" id="age">
+    <button onclick="getData()">check eligiblity</button>
+    <p id="p"></p>
+</body>
+</html>
